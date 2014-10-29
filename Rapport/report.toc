@@ -5,7 +5,13 @@
 \contentsline {section}{\numberline {1.2}Metode}{3}
 \contentsline {chapter}{\numberline {2}Implementation}{4}
 \contentsline {chapter}{\numberline {3}Test}{5}
-\contentsline {chapter}{\numberline {4}Diskussion}{6}
-\contentsline {chapter}{\numberline {5}Konklusion}{7}
-\contentsline {part}{II\hspace {1em}Appendix}{8}
-\contentsline {chapter}{\numberline {A}Kildekode}{9}
+\contentsline {section}{\numberline {3.1}DFS listing}{5}
+\contentsline {subsection}{\numberline {3.1.1}Setup}{5}
+\contentsline {subsection}{\numberline {3.1.2}Sammenligning af output}{5}
+\contentsline {chapter}{\numberline {4}Diskussion}{7}
+\contentsline {chapter}{\numberline {5}Konklusion}{8}
+\contentsline {part}{II\hspace {1em}Appendix}{9}
+\contentsline {chapter}{\numberline {A}Resultater fra DFS listing}{10}
+\contentsline {section}{\numberline {A.1}DFS}{10}
+\contentsline {section}{\numberline {A.2}PS}{16}
+\contentsline {chapter}{\numberline {B}Kildekode}{24}
