@@ -1,5 +1,15 @@
 \chapter{Test}
-
+\section{Lineær listing}
+Kernemodulet for den lineære gennemgang af processer er testet ved at installere modulet ved brug af kommandoen \textit{sudo insmod cumlist.ko}.
+\\
+Modulet skriver til kernel loggen ved initialiseringen. Outputtet fra kernel loggen indhentes ved hjælp af kommandoen dmesg:\\
+\textit{sudo dmesg \textgreater linear.txt}
+\\
+\\
+Resultatet sammenlignes med den indbyggede ps-kommando, men parametrene -el:\\
+\textit{ps -el \textgreater pslinear.txt}
+\\
+Se appendix \ref{ResultaterLinear} for output fra konsollen.
 \section{DFS listing}
 \subsection{Setup}
 DFS kernemodulet er testet ved først at registere det med følgende kommando:\\
