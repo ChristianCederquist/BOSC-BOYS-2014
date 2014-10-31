@@ -4,14 +4,22 @@
 \contentsline {section}{\numberline {1.1}Problemformulering}{3}
 \contentsline {section}{\numberline {1.2}Metode}{3}
 \contentsline {chapter}{\numberline {2}Implementation}{4}
+\contentsline {section}{\numberline {2.1}Simple}{4}
+\contentsline {section}{\numberline {2.2}Linear}{4}
+\contentsline {section}{\numberline {2.3}DFS}{4}
 \contentsline {chapter}{\numberline {3}Test}{5}
-\contentsline {section}{\numberline {3.1}DFS listing}{5}
-\contentsline {subsection}{\numberline {3.1.1}Setup}{5}
-\contentsline {subsection}{\numberline {3.1.2}Sammenligning af output}{5}
+\contentsline {section}{\numberline {3.1}Line\IeC {\ae }r listing}{5}
+\contentsline {section}{\numberline {3.2}DFS listing}{5}
+\contentsline {subsection}{\numberline {3.2.1}Setup}{5}
+\contentsline {subsection}{\numberline {3.2.2}Sammenligning af output}{5}
 \contentsline {chapter}{\numberline {4}Diskussion}{7}
 \contentsline {chapter}{\numberline {5}Konklusion}{8}
 \contentsline {part}{II\hspace {1em}Appendix}{9}
-\contentsline {chapter}{\numberline {A}Resultater fra DFS listing}{10}
-\contentsline {section}{\numberline {A.1}DFS}{10}
-\contentsline {section}{\numberline {A.2}PS}{16}
-\contentsline {chapter}{\numberline {B}Kildekode}{24}
+\contentsline {chapter}{\numberline {A}Resultatet fra Line\IeC {\ae }r listing}{10}
+\contentsline {section}{\numberline {A.1}Linear}{10}
+\contentsline {section}{\numberline {A.2}Implementation}{10}
+\contentsline {section}{\numberline {A.3}PS}{13}
+\contentsline {chapter}{\numberline {B}Resultater fra DFS listing}{19}
+\contentsline {section}{\numberline {B.1}DFS}{19}
+\contentsline {section}{\numberline {B.2}PS}{25}
+\contentsline {chapter}{\numberline {C}Kildekode}{33}

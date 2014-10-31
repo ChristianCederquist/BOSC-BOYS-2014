@@ -1,0 +1,10 @@
+- Metode: Chris
+- Diskussion: Daniel
+	- PS udskrift vs vores
+	- Hvorfor modul i init? Bør den ikke kunne kaldes?
+
+Introduktion: Chris
+Implementation: Bendix
+Test: Beskrive sammenligning af data for listing: Bendix
+
+Laves til onsdag morgen!
