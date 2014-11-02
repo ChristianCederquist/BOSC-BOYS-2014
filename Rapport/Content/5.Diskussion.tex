@@ -1,1 +1,19 @@
 \chapter{Diskussion}
+\section{Brugen af kernemoduler}
+Brugen af kernemoduler frem for almindelige systemkald har adskillige fordele\footnote{Afsnit 16.3 i OSC International 9th}. Det er f.eks. muligt at indlæse vilkårlige dele af systemet som ønsket, og når først disse er indlæst, kører de i kontekst af kernen. Med andre ord har et kernemodul fuld adgang til systemets hardware. Netop dette har ulempen, at kernemodulet er i stand til at crashe systemet.
+
+Alternativet til samme kontrol over hardwaren er at foretage kodeændringer direkte i kernen, men dette kræver rekompilering, genstart mv. af kernen, og brugen af kernemoduler er altså en betydeligt mere fleksibel fremgangsmåde.
+
+\section{Fordele ved ps}
+Vores implementation viser udelukkende navn, state og process-id for de kørende tasks. Den indbyggede \textit{ps} kommando tilbyder betydeligt mere funktionalitet\footnote{https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt}. Den egentligt implementerede løsning betragtes altså ikke som erstatning for den indbyggede, men samme fremgangsmåde kan benyttes til at \textit{udvide} den indbyggede kommando (se følgende afsnit).
+
+\section{Implementation af kode i init}
+Koden viser i øjeblikket en liste af tasks ved indlæsning af modulet. Dette virker i praksis ikke som et passende alternativ til \textit{ps}, da listningen ikke kan ske uden at genindlæse modulet. Kernemodulet kunne i stedet udvikles til f.eks. et af følgende kernemodultyper\footnote{Afsnit 2.7.4 i OSC}:
+\begin{itemize}
+\item Systemkald: Ved registrering af modulet kan det erstatte eksisterende systemkald eller tilbyde et nyt\footnote{http://linux.die.net/lkmpg/x978.html}.
+\item Filsystem: Ved brug af \textit{sysfs} kan indhold fra kernemodulet eksporteres gennem filsystemet\footnote{https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt}, som vi f.eks. kender det fra første obligatoriske opgave ved læsning af hostnavn.
+\end{itemize}
+
+Idéen med brug af et systemkald kunne f.eks. være, at kaldet til den indbyggede \textit{ps} kommando bliver erstattet af vores kode, som enten erstatter eller udvider funktionaliteten i \textit{ps}. Ved udvidelse kunne vores kernemodul f.eks. implementere logningsfunktionalitet, som ved hvert brugerkald til \textit{ps} ville resultere i en post i kerneloggen. Herefter kunne den indbyggede \textit{ps} kaldes, og kernemodulet ville altså fungere transparent for brugeren.
+
+Et eksempel på brugen af filsystemet kunne være, at outputtet fra kernemodulet nu ville eksistere i form af filer, som et brugerprogram kan indlæse til enhver tid. Indlæsning af procesoplysninger ville ikke længere være begrænset til indlæsning af modulet, men kunne udtrækkes på et vilkårligt tidspunkt ved at læse den registerede fil.
