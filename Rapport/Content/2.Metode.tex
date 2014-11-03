@@ -1,1 +1,28 @@
 \section{Metode}
+\subsection{Kernemoduler}
+Linuxkernen har et set af komponenter og forbindelser til andre sevices gennem en række moduler, som startes enten gennem opstart eller under kørsel. Kernemoduler kan installeres under kørsel, og bruges til diverse opgaver, så som enhedsdrivere eller filsystemer. Fordelen ved loadable kernemoduler i Linux er, at man ved ændringer i kernen ikke behøver at genstarte og genopbygge kernen, hvis et nyt modul skal tilføjes.
+\subsection{Listemacros}
+\subsubsection{list\_for\_each(\_entry)}
+list\_for\_each og list\_for\_each\_entry er to macros defineret i list.h. Den første macro itererer over en lists, mens den anden itererer over en list\_struct type i en liste.
+Disse er defineret følgende:\\
+\begin{lstlisting}
+#define list_for_each(pos, head) \
+        for (pos = (head)->next; pos != (head); pos = pos->next)
+\end{lstlisting}
+\\og\\
+\begin{lstlisting}
+#define list_for_each_entry(pos, head, member)                          \
+        for (pos = list_first_entry(head, typeof(*pos), member);        \
+        &pos->member != (head);                                    \
+        pos = list_next_entry(pos, member))
+\end{lstlisting}
+\subsubsection{for\_each\_process}
+for\_each\_process er en macro defineret i sched.h. Denne macro itererer over operativsystemets liste af tasks, startende fra \textit{init\_task}. Denne macro er defineret følgende:\\
+\begin{lstlisting}
+ #define for_each_process(p) \
+         for (p = &init_task ; (p = next_task(p)) != &init_task ; )
+\end{lstlisting}
+\subsection{Processer}
+En proces er et program, der er under eksekvering. Det består af en stak, en hob, data og kode. I Linux representeres processer som task\_structs i sched.h. Denne struktur indeholder al relevant information omkring processer, så som id, navn, barneprocesser, status, og en række andre informationer. Disse processers information kan tilgås ved at iterere over systemets processer ved hjælp af blandt andre for\_each\_process macroen.
+\subsection{Dybde-først søgealgoritme}
+Dybde-først søgning sker i en træstruktur ved, at man altid vælger det første barn af den node man befinder sig på, indtil man når en leaf node, hvorefter man går tilbage indtil man igen kan vælge et barn. Modsætningen til denne algoritme er bredde-først søgning, hvor man konsekvent holder sig tæt på den node man starter på. Her besøger man hvert barn, før man går videre til hvert barns barn. Disse algoritmer bruges også i udforskning af grafer og deres tilslutningsmuligheder.
