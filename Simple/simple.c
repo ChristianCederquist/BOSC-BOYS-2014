@@ -80,7 +80,7 @@ void simple_exit(void) {
 	list_for_each_entry_safe(ptr, next, &birthday_list, list){
 	  list_del(&ptr->list);
 	  kfree(ptr);
-}
+	}
 }
 
 /* Macros for registering module entry and exit points. */
