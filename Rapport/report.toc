@@ -3,26 +3,34 @@
 \contentsline {chapter}{\numberline {1}Introduktion}{3}
 \contentsline {section}{\numberline {1.1}Problemformulering}{3}
 \contentsline {section}{\numberline {1.2}Metode}{3}
-\contentsline {chapter}{\numberline {2}Implementation}{4}
-\contentsline {section}{\numberline {2.1}Simple}{4}
-\contentsline {section}{\numberline {2.2}Linear}{4}
-\contentsline {section}{\numberline {2.3}DFS}{4}
-\contentsline {chapter}{\numberline {3}Test}{5}
-\contentsline {section}{\numberline {3.1}Line\IeC {\ae }r listing}{5}
-\contentsline {section}{\numberline {3.2}DFS listing}{5}
-\contentsline {subsection}{\numberline {3.2.1}Setup}{5}
-\contentsline {subsection}{\numberline {3.2.2}Sammenligning af output}{5}
-\contentsline {chapter}{\numberline {4}Diskussion}{7}
-\contentsline {section}{\numberline {4.1}Brugen af kernemoduler}{7}
-\contentsline {section}{\numberline {4.2}Fordele ved ps}{7}
-\contentsline {section}{\numberline {4.3}Implementation af kode i init}{7}
-\contentsline {chapter}{\numberline {5}Konklusion}{8}
-\contentsline {part}{II\hspace {1em}Appendix}{9}
-\contentsline {chapter}{\numberline {A}Resultatet fra Line\IeC {\ae }r listing}{10}
-\contentsline {section}{\numberline {A.1}Linear}{10}
-\contentsline {section}{\numberline {A.2}Implementation}{10}
-\contentsline {section}{\numberline {A.3}PS}{13}
-\contentsline {chapter}{\numberline {B}Resultater fra DFS listing}{19}
-\contentsline {section}{\numberline {B.1}DFS}{19}
-\contentsline {section}{\numberline {B.2}PS}{25}
-\contentsline {chapter}{\numberline {C}Kildekode}{33}
+\contentsline {subsection}{\numberline {1.2.1}Kernemoduler}{3}
+\contentsline {subsection}{\numberline {1.2.2}Listemacros}{3}
+\contentsline {subsubsection}{list\_for\_each(\_entry)}{3}
+\contentsline {subsubsection}{for\_each\_process}{3}
+\contentsline {subsection}{\numberline {1.2.3}Processer}{3}
+\contentsline {subsection}{\numberline {1.2.4}Dybde-f\IeC {\o }rst s\IeC {\o }gealgoritme}{4}
+\contentsline {chapter}{\numberline {2}Implementation}{5}
+\contentsline {section}{\numberline {2.1}Simple}{5}
+\contentsline {section}{\numberline {2.2}Linear}{5}
+\contentsline {section}{\numberline {2.3}DFS}{5}
+\contentsline {chapter}{\numberline {3}Test}{7}
+\contentsline {section}{\numberline {3.1}Linux Kernel Modules}{7}
+\contentsline {section}{\numberline {3.2}Line\IeC {\ae }r listing}{7}
+\contentsline {subsection}{\numberline {3.2.1}Sammenligning af output}{7}
+\contentsline {section}{\numberline {3.3}DFS listing}{8}
+\contentsline {subsection}{\numberline {3.3.1}Setup}{8}
+\contentsline {subsection}{\numberline {3.3.2}Sammenligning af output}{8}
+\contentsline {chapter}{\numberline {4}Diskussion}{10}
+\contentsline {section}{\numberline {4.1}Brugen af kernemoduler}{10}
+\contentsline {section}{\numberline {4.2}Fordele ved ps}{10}
+\contentsline {section}{\numberline {4.3}Implementation af kode i init}{10}
+\contentsline {chapter}{\numberline {5}Konklusion}{11}
+\contentsline {part}{II\hspace {1em}Appendix}{12}
+\contentsline {chapter}{\numberline {A}Resultatet fra Line\IeC {\ae }r listing}{13}
+\contentsline {section}{\numberline {A.1}Linear}{13}
+\contentsline {section}{\numberline {A.2}Implementation}{13}
+\contentsline {section}{\numberline {A.3}PS}{16}
+\contentsline {chapter}{\numberline {B}Resultater fra DFS listing}{22}
+\contentsline {section}{\numberline {B.1}DFS}{22}
+\contentsline {section}{\numberline {B.2}PS}{28}
+\contentsline {chapter}{\numberline {C}Kildekode}{36}

@@ -1,4 +1,14 @@
 \chapter{Test}
+\section{Linux Kernel Modules}
+Kernemodulet er testet ved først at installere modulet ved brug af kommandoen: \textit{sudo insmod simple.ko}.
+\\
+Modulet skriver til kernel loggen ved initialiseringen. Outputtet fra kernel loggen indhentes ved hjælp af kommandoen dmesg:\\
+\textit{dmesg}
+\\
+\\
+Modulet slettes derefter ved hjælp af kommmandoen: \textit{sudo rmmod simple}. For at sikre at listen er blevet slettet kaldes kommandoen \textit{dmesg} endnu en gang.
+\\
+\\
 \section{Lineær listing}
 Kernemodulet for den lineære gennemgang af processer er testet ved at installere modulet ved brug af kommandoen \textit{sudo insmod cumlist.ko}.
 \\
@@ -6,10 +16,18 @@ Modulet skriver til kernel loggen ved initialiseringen. Outputtet fra kernel log
 \textit{sudo dmesg \textgreater linear.txt}
 \\
 \\
+\subsection{Sammenligning af output}
 Resultatet sammenlignes med den indbyggede ps-kommando, men parametrene -el:\\
 \textit{ps -el \textgreater pslinear.txt}
 \\
-Se appendix \ref{ResultaterLinear} for output fra konsollen.
+PS:
+\includegraphics[width=\textwidth]{Testing/PSLinear.png}
+\\
+Implementation:
+\includegraphics[width=\textwidth]{Testing/Linear.png}
+\\
+Som det kan ses ud fra det udsnit som er taget, så har processerne de samme id i både det implementerede modul og i ps-kommandoen.
+
 \section{DFS listing}
 \subsection{Setup}
 DFS kernemodulet er testet ved først at registere det med følgende kommando:\\
