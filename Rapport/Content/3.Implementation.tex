@@ -1,56 +1,29 @@
 \chapter{Implementation}
+Hvert af modulenerne har 2 funktioner med identifikatorene: \textit{_init} og \textit{_exit}. Disse 2 funktioner bruges til at initialisere og lukke et modul ned. Det særlige ved \textit{_init} er at den bliver kasseret efter et succesfuldt load, da den ikke skal anvendes igen og optager dermed ikke unødig plads.\\
 \section{Simple}
-Simple er et modul som bruges til at lave en kædet liste ud fra en defineret datastruktur. Når modulet bliver initialiseret, skal den oprette en liste og udskrive alle elementer fra den den. Når modulet bliver fjernet skal den slette hele listen og frigøre pladsen.
-\\\\
-Simple er implementeret ved først at definere en struct som indeholder de fornødne data, som man gerne vil have til at indgå i den kædede liste. Det særlige ved structen er, at den indeholder: \textit{struct list\_head list}. \textit{list\_head} er en del af \textit{linux{types.h}} package. Den indeholder 2 members: next og prev, som henholdsvis peger på den næste og det tidligere element i listen. Denne specifikke struktur gør det muligt at anvende macro-funktioner til at behandle den definerede datastruktur.
-\\\\
-For at indsætte elementer i listen anvendes en macro, som kan ses i kodeudsnittet nedenunder. 
+Simple er et modul som bruges til at lave en kædet liste ud fra en defineret datastruktur. Når modulet bliver initialiseret, skal den oprette en liste og udskrive alle elementer fra den den. Når modulet bliver fjernet skal den slette hele listen og frigøre pladsen.\\
+\\
+Simple er implementeret ved først at definere en struct som indeholder de fornødne data, som man gerne vil have til at indgå i den kædede liste. Det særlige ved structen er, at den indeholder: \textit{struct list\_head list}. \textit{list\_head} er en del af \textit{linux/types.h} package. Den indeholder 2 members: next og prev, som henholdsvis peger på den næste og det tidligere element i listen. Denne specifikke struktur gør det muligt at anvende macro-funktioner til at behandle den definerede datastruktur.\\
 
-\begin{lstlisting}
-list_add_tail(&person->list, &birthday_list);
-\end{lstlisting}
+For at indsætte elementer i listen anvendes macroén: \textit{list\_add\_tail}. Denne macro indsætter det nye element bagerst i listen.\\
 
-For at iterere igennem listen og udskrive de forskellige elementer, anvendes macroen: \textit{list\_for\_each\_entry}.
+For at iterere igennem listen og udskrive de forskellige elementer, anvendes macroen: \textit{list\_for\_each\_entry}.\\
 
-\begin{lstlisting}
-list_for_each_entry(ptr, &birthday_list, list){
-         printk(KERN_INFO "Person %d-%d-%d\n", ptr->day, ptr->month, ptr->year);
-       }
-\end{lstlisting}
-
-For at slette elementer fra listen anvendes 2 macroer: \textit{list\_for\_each\_entry\_safe}, som bruges til at iterere igennem listen, og \textit{list\_del} som anvendes til at slette elementer. Derudover anvendes også metoden kfree, som frigør den anvendte hukommelse.
-
-\begin{lstlisting}
-list_for_each_entry_safe(ptr, next, &birthday_list, list){
-	  list_del(&ptr->list);
-	  kfree(ptr);
-	}
-\end{lstlisting}
+For at slette elementer fra listen anvendes 2 macroer: \textit{list\_for\_each\_entry\_safe}, som bruges til at iterere igennem listen, og \textit{list\_del} som anvendes til at slette elementer. Derudover anvendes også metoden kfree, som frigør den anvendte hukommelse.\\
 
 \section{Linear}
 Dette modul har til opgave at udskrive alle tasks, som Linux udfører på et pågældende tidspunkt. 
 
-I Linux er tasks repræsenterert ved hjælp af structen: \textit{task\_struct}. Derfor er implementationen af dette modul meget simpel, da den kun har brug for at iterere igennem listen af tasks, som den får givet af systemet og derefter printe de fornødne informationer ud. For at udføre iterationen anvendes macroen: \textit{for\_each\_process}.
+I Linux er tasks repræsenterert ved hjælp af structen: \textit{task\_struct}. Implementationen af dette modul meget simpel, da den kun har brug for at iterere igennem listen af tasks, som den får givet af systemet og derefter printe de fornødne informationer ud. For at udføre iterationen anvendes macroen: \textit{for\_each\_process}.
 
-\begin{lstlisting}
-for_each_process(task){
-	  printk(KERN_INFO "%s: State is %ld and process id is %d\n",task->comm,task->state,task->pid);
-	}
-\end{lstlisting}
+Infos:
+\begin{itemize}
+\item Comm: Navnet på den specifikke process.
+\item State: Angiver hvilken tilstand den enkelte process er i. Stort set alle processerne som blev printet ud i vores test, havde tilstanden 1, som betyder at processen venter på at en opgave bliver færdig.
+\item Pid: Angiver den enkelte process unikke id.  
+\end{itemize}
 
 \section{DFS}
-Dette modul skal ligesom det foregående modul, udskrive alle tasks som Linux er igang med at udføre. Foreskellen er dog, at modulet ikke skal udskrive tasks linært, men derimod anvende en dybde-først søgning.
+Dette modul skal ligesom det foregående modul, udskrive alle tasks som Linux er igang med at udføre. Foreskellen er dog, at modulet ikke skal udskrive tasks linært, men derimod anvende en dybde-først søgning.\\
 \\
-\begin{lstlisting}
-int dfs_list(struct task_struct *task){
-	struct list_head *list;	  
-	struct task_struct *child;
-
-  	list_for_each(list, &task->children){
-	  child = list_entry(list, struct task_struct, sibling);	
-	  printk(KERN_INFO "%s: State is %ld and process id is %d\n",child->comm,child->state,child->pid);
-	  dfs_list(child);
-        }
-  return 0;
-}
-\end{lstlisting}
+DFS er implementeret ved at lave et rekursivt metodekald af \textit{dfs\_list}. Metoden får en task som input, og iterere derefter over hvert enkelt childprocess af denne task. I denne iteration bliver der udskrevet comm, state og pid for childprocessen, men før iterationen går videre til den næste siblingprocess, kaldes metoden \textit{dfs\_list} igen, nu bare med cildprocessen som input.

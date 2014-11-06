@@ -5,7 +5,7 @@ Brugen af kernemoduler frem for almindelige systemkald har adskillige fordele\fo
 Alternativet til samme kontrol over hardwaren er at foretage kodeændringer direkte i kernen, men dette kræver rekompilering, genstart mv. af kernen, og brugen af kernemoduler er altså en betydeligt mere fleksibel fremgangsmåde.
 
 \section{Fordele ved ps}
-Vores implementation viser udelukkende navn, state og process-id for de kørende tasks. Den indbyggede \textit{ps} kommando tilbyder betydeligt mere funktionalitet\footnote{https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt}. Den egentligt implementerede løsning betragtes altså ikke som erstatning for den indbyggede, men samme fremgangsmåde kan benyttes til at \textit{udvide} den indbyggede kommando (se følgende afsnit).
+Vores implementation viser udelukkende navn, state og process-id for de kørende tasks. Den indbyggede \textit{ps} kommando tilbyder betydeligt mere funktionalitet\footnote{https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt}. Den implementerede løsning betragtes altså ikke som erstatning for den indbyggede, men samme fremgangsmåde kan benyttes til at \textit{udvide} den indbyggede kommando (se følgende afsnit).
 
 \section{Implementation af kode i init}
 Koden viser i øjeblikket en liste af tasks ved indlæsning af modulet. Dette virker i praksis ikke som et passende alternativ til \textit{ps}, da listningen ikke kan ske uden at genindlæse modulet. Kernemodulet kunne i stedet udvikles til f.eks. et af følgende kernemodultyper\footnote{Afsnit 2.7.4 i OSC}:

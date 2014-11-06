@@ -1,18 +1,17 @@
 \select@language {english}
 \contentsline {part}{I\hspace {1em}Rapport}{2}
 \contentsline {chapter}{\numberline {1}Introduktion}{3}
-\contentsline {section}{\numberline {1.1}Problemformulering}{3}
-\contentsline {section}{\numberline {1.2}Metode}{3}
-\contentsline {subsection}{\numberline {1.2.1}Kernemoduler}{3}
-\contentsline {subsection}{\numberline {1.2.2}Listemacros}{3}
+\contentsline {section}{\numberline {1.1}Metode}{3}
+\contentsline {subsection}{\numberline {1.1.1}Kernemoduler}{3}
+\contentsline {subsection}{\numberline {1.1.2}Listemacros}{3}
 \contentsline {subsubsection}{list\_for\_each(\_entry)}{3}
 \contentsline {subsubsection}{for\_each\_process}{3}
-\contentsline {subsection}{\numberline {1.2.3}Processer}{3}
-\contentsline {subsection}{\numberline {1.2.4}Dybde-f\IeC {\o }rst s\IeC {\o }gealgoritme}{4}
+\contentsline {subsection}{\numberline {1.1.3}Processer}{4}
+\contentsline {subsection}{\numberline {1.1.4}Dybde-f\IeC {\o }rst s\IeC {\o }gealgoritme}{4}
 \contentsline {chapter}{\numberline {2}Implementation}{5}
 \contentsline {section}{\numberline {2.1}Simple}{5}
 \contentsline {section}{\numberline {2.2}Linear}{5}
-\contentsline {section}{\numberline {2.3}DFS}{5}
+\contentsline {section}{\numberline {2.3}DFS}{6}
 \contentsline {chapter}{\numberline {3}Test}{7}
 \contentsline {section}{\numberline {3.1}Linux Kernel Modules}{7}
 \contentsline {section}{\numberline {3.2}Line\IeC {\ae }r listing}{7}
