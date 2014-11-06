@@ -5,11 +5,3 @@ bosc@ubuntu:~/Desktop/obl3$ dmesg
 [  477.095367] Person 27-4-1958
 [  477.095372] Person 15-3-1948
 [  477.095377] Person 20-12-1990
-
-bosc@ubuntu:~/Desktop/obl3$ dmesg
-[  576.839737] Loading Module
-[  576.843064] Birthday: 1-1-1
-[  576.843093] Birthday: 2-2-2
-[  576.843096] Birthday: 3-3-3
-[  576.843098] Birthday: 4-4-4
-[  576.843100] Birthday: 5-5-5
