@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.9.26)  6 NOV 2014 23:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.9.26)  6 NOV 2014 23:48
 entering extended mode
 **report.tex
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\report.tex
@@ -571,12 +571,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-)
-\tf@toc=\write3
  [1
 
-]
-[2
+])
+\tf@toc=\write3
+
+[2] [3
 
 ]
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Content/1.Introduktion
@@ -611,11 +611,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[3
+[4
 
 ])
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Content/3.Implementati
-on.tex [4]
+on.tex [5]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -652,9 +652,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--1
 
  []
 
-[5
+[6
 
-] [6]
+] [7]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
@@ -678,14 +678,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--19
 
  []
 
-<Testing/PSLinear.png, id=32, 476.53032pt x 112.16907pt>
+<Testing/PSLinear.png, id=35, 476.53032pt x 112.16907pt>
 File: Testing/PSLinear.png Graphic file (type png)
 
 <use Testing/PSLinear.png>
 Package pdftex.def Info: Testing/PSLinear.png used on input line 24.
 (pdftex.def)             Requested size: 469.75502pt x 110.58044pt.
 
-<Testing/Linear.png, id=33, 401.24907pt x 140.77594pt>
+<Testing/Linear.png, id=36, 401.24907pt x 140.77594pt>
 File: Testing/Linear.png Graphic file (type png)
 
 <use Testing/Linear.png>
@@ -716,7 +716,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--30
 
  []
 
-[7
+[8
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--46
@@ -738,15 +738,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[8 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/PSLinear.pn
+[9 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/PSLinear.pn
 g> <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/Linear.png>
-] <Testing/DFS1.png, id=40, 977.15062pt x 256.70906pt>
+] <Testing/DFS1.png, id=43, 977.15062pt x 256.70906pt>
 File: Testing/DFS1.png Graphic file (type png)
  <use Testing/DFS1.png>
 Package pdftex.def Info: Testing/DFS1.png used on input line 51.
 (pdftex.def)             Requested size: 469.75502pt x 123.41087pt.
 
-<Testing/DFS2.png, id=41, 401.24907pt x 255.20343pt>
+<Testing/DFS2.png, id=44, 401.24907pt x 255.20343pt>
 File: Testing/DFS2.png Graphic file (type png)
  <use Testing/DFS2.png>
 Package pdftex.def Info: Testing/DFS2.png used on input line 54.
@@ -758,63 +758,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--1
 
  []
 
-[9 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/DFS1.png (P
-NG copy)> <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/DFS2
-.png (PNG copy)>]
+[10 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/DFS1.png (
+PNG copy)> <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/DFS
+2.png (PNG copy)>]
 Chapter 4.
 )
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Content/6.Konklusion.t
-ex [10
+ex [11
 
 ]
 Chapter 5.
-) [11
+) [12
 
-] [12
+] [13
 
 ]
 Appendix A.
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/linear.txt
-[13
+[14
 
-] [14] [15])
+] [15] [16])
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/pslinear.txt
-[16] [17] [18] [19] [20]) [21]
+[17] [18] [19] [20] [21]) [22]
 Appendix B.
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/dfs.txt
-[22
+[23
 
-] [23] [24] [25] [26] [27])
+] [24] [25] [26] [27] [28])
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/ps.txt
-[28] [29] [30] [31] [32] [33] [34])
+[29] [30] [31] [32] [33] [34] [35])
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/source.tex
-[35]
+[36]
 Appendix C.
-) [36
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/Simple/s
+imple.c
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+ [37
 
-] (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\report.aux) ) 
+]) [38]
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/Simple/M
+akefile.make)
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/Linear/c
+umlist.c)
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/Linear/M
+akefile.make) [39]
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/DFS/dfsl
+ist.c)
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\Appendix/Code/DFS/Make
+file.make)) [40]
+(C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\report.aux) ) 
 Here is how much of TeX's memory you used:
- 6182 strings out of 493921
- 89436 string characters out of 3147279
- 591103 words of memory out of 3000000
- 9343 multiletter control sequences out of 15000+200000
+ 6487 strings out of 493921
+ 94485 string characters out of 3147279
+ 603707 words of memory out of 3000000
+ 9619 multiletter control sequences out of 15000+200000
  9453 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,8n,38p,978b,1557s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (37 pages, 291591 bytes).
+ 43i,8n,52p,978b,1670s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (41 pages, 307025 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 183 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
