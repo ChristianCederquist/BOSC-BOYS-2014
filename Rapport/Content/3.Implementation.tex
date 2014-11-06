@@ -14,7 +14,7 @@ For at slette elementer fra listen anvendes 2 macroer: \textit{list\_for\_each\_
 \section{Linear}
 Dette modul har til opgave at udskrive alle tasks, som Linux udfører på et pågældende tidspunkt. 
 
-I Linux er tasks repræsenterert ved hjælp af structen: \textit{task\_struct}. Implementationen af dette modul meget simpel, da den kun har brug for at iterere igennem listen af tasks, som den får givet af systemet og derefter printe de fornødne informationer ud. For at udføre iterationen anvendes macroen: \textit{for\_each\_process}.
+I Linux er tasks repræsenterert ved hjælp af structen: \textit{task\_struct}. Implementationen af dette modul er meget simpel, da den kun har brug for at iterere igennem listen af tasks, som den får givet af systemet og derefter printe de fornødne informationer ud. For at udføre iterationen anvendes macroen: \textit{for\_each\_process}.
 
 Infos:
 \begin{itemize}
@@ -26,4 +26,4 @@ Infos:
 \section{DFS}
 Dette modul skal ligesom det foregående modul, udskrive alle tasks som Linux er igang med at udføre. Foreskellen er dog, at modulet ikke skal udskrive tasks linært, men derimod anvende en dybde-først søgning.\\
 \\
-DFS er implementeret ved at lave et rekursivt metodekald af \textit{dfs\_list}. Metoden får en task som input, og iterere derefter over hvert enkelt childprocess af denne task. I denne iteration bliver der udskrevet comm, state og pid for childprocessen, men før iterationen går videre til den næste siblingprocess, kaldes metoden \textit{dfs\_list} igen, nu bare med cildprocessen som input.
+DFS er implementeret ved at lave et rekursivt metodekald af \textit{dfs\_list}. Metoden får en task som input, og itererer derefter over hvert enkelt barn af denne task. Under iterationen udskrives comm, state og pid for hvert barn, men før iterationen går videre til det næste barn, kaldes metoden \textit{dfs\_list} igen, nu bare med barnets barn som input.
