@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.9.26)  6 NOV 2014 23:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.9.26)  7 NOV 2014 00:03
 entering extended mode
 **report.tex
 (C:\Users\Daniel\Documents\GitHub\BOSC-BOYS-2014\Rapport\report.tex
@@ -738,15 +738,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[9 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/PSLinear.pn
-g> <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/Linear.png>
-] <Testing/DFS1.png, id=43, 977.15062pt x 256.70906pt>
+<Testing/DFS1.png, id=40, 977.15062pt x 256.70906pt>
 File: Testing/DFS1.png Graphic file (type png)
  <use Testing/DFS1.png>
 Package pdftex.def Info: Testing/DFS1.png used on input line 51.
 (pdftex.def)             Requested size: 469.75502pt x 123.41087pt.
 
-<Testing/DFS2.png, id=44, 401.24907pt x 255.20343pt>
+[9 <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/PSLinear.pn
+g> <C:/Users/Daniel/Documents/GitHub/BOSC-BOYS-2014/Rapport/Testing/Linear.png>
+] <Testing/DFS2.png, id=44, 401.24907pt x 255.20343pt>
 File: Testing/DFS2.png Graphic file (type png)
  <use Testing/DFS2.png>
 Package pdftex.def Info: Testing/DFS2.png used on input line 54.
@@ -768,6 +768,21 @@ ex [11
 
 ]
 Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
 ) [12
 
 ] [13
@@ -817,7 +832,7 @@ file.make)) [40]
 Here is how much of TeX's memory you used:
  6487 strings out of 493921
  94485 string characters out of 3147279
- 603707 words of memory out of 3000000
+ 604707 words of memory out of 3000000
  9619 multiletter control sequences out of 15000+200000
  9453 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -833,7 +848,7 @@ cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (41 pages, 307025 bytes).
+Output written on report.pdf (41 pages, 307896 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

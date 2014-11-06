@@ -1,2 +1,11 @@
 \chapter{Konklusion}
-Formålet med denne rapport var at undersøge kernemoduler og processer i Linux. Baseret på litteraturens bageopskrifter blev 3 kernemodulløsninger implementeret. Vi har her vist funktionaliteten for forskellige kernemoduler, samt deres afprøvelse. Vores kernemodul for processer fulgte samme princip som ps-kommandoen, dog med færre informationer. Vi opdagede under udviklingen også hvor let det var for kernemoduler at beskadige og crashe systemet under udviklingen. Simple-modulet demonstrerede brug af hukommelsesallokering i kernen. Linear- og DFS-modulet demonstrerede anvendelse af liste-macroer til at gennemgå systemets processer. Disse to moduler viser ikke lige så megen information som ps, og har ej heller lige så megen funktionalitet, så der er stadig mange muligheder for videreudvikling og udvidelse af modulerne.
+Formålet med denne rapport var at undersøge kernemoduler og processer i Linux. Baseret på litteraturens bageopskrifter blev 3 kernemodulløsninger implementeret.
+\\
+
+Vi har her vist funktionaliteten for forskellige kernemoduler, samt deres afprøvelse. Vores kernemodul for processer fulgte samme princip som ps-kommandoen, dog med færre informationer. Vi opdagede under udviklingen også hvor let det var for kernemoduler at beskadige og crashe systemet under udviklingen.
+\\
+
+Simple-modulet demonstrerede brug af hukommelsesallokering i kernen. Linear- og DFS-modulet demonstrerede anvendelse af liste-macroer til at gennemgå systemets processer. Disse to moduler viser ikke lige så megen information som ps, og har ej heller lige så megen funktionalitet, så der er stadig mange muligheder for videreudvikling og udvidelse af modulerne.
+\\
+
+Som nævnt i diskussionsafsnittet åbner kernemoduludvikling op for muligheden for at udvide indbygget funktionalitet uden at rekompilere kernen. Udvidelsesscenariet omkring logning af indbyggede kommandoer blev diskuteret, men en egentlig implementation betragtes uden for scope af denne opgave.
