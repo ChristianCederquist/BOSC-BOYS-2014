@@ -3,7 +3,7 @@
 Linuxkernen har et set af komponenter og forbindelser til andre sevices gennem en række moduler, som startes enten gennem opstart eller under kørsel. Kernemoduler kan installeres under kørsel, og bruges til diverse opgaver, så som enhedsdrivere eller filsystemer. Fordelen ved loadable kernemoduler i Linux er, at man ved ændringer i kernen ikke behøver at genstarte og genopbygge kernen, hvis et nyt modul skal tilføjes.
 \subsection{Listemacros}
 \subsubsection{list\_for\_each(\_entry)}
-list\_for\_each og list\_for\_each\_entry er to macros defineret i list.h. Den første macro itererer over en lists, mens den anden itererer over en list\_struct type i en liste.
+list\_for\_each og list\_for\_each\_entry er to macros defineret i list.h. Den første macro itererer over en liste, mens den anden itererer over en list\_struct type i en liste.
 Disse er defineret følgende:\\
 \begin{lstlisting}
 #define list_for_each(pos, head) \
